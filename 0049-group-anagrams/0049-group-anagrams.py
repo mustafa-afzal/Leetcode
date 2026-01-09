@@ -8,3 +8,7 @@ class Solution:
             else:
                 dict1[sSorted] = [s]
         return list(dict1.values())
+                
+        
+
+        
