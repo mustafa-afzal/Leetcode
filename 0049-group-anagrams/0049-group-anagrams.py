@@ -1,14 +1,11 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        dict1 = {}
+        map = {}
         for s in strs:
             sSorted = "".join(sorted(s))
-            if sSorted in dict1:
-                dict1[sSorted].append(s)
+            if sSorted in map:
+                map[sSorted].append(s)
             else:
-                dict1[sSorted] = [s]
-        return list(dict1.values())
-                
-        
-
+                map[sSorted] = [s]
+        return (list(map.values()))     
         
