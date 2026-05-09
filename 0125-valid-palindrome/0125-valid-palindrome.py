@@ -3,7 +3,6 @@ class Solution:
         l, r = 0, len(s) - 1
         sLower = s.lower()
         while l < r:
-            print(l, r, sLower[l], sLower[r]) 
             if sLower[l].isalnum() and sLower[r].isalnum() and sLower[l] == sLower[r]:
                 l += 1
                 r -= 1
