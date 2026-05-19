@@ -1,19 +1,18 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        l, maxCount = 0, 0
-        best = 0
-        freq = {}
+        l = 0
+        res = 0
+        dict1 = {}
         for r in range(len(s)):
-            length = (r - l) + 1
-            if s[r] in freq:
-                freq[s[r]] += 1
+            if s[r] in dict1:
+                dict1[s[r]] += 1
             else:
-                freq[s[r]] = 1
-            maxCount = max(maxCount, freq[s[r]])
-            while length - maxCount > k:
-                freq[s[l]] -= 1
+                dict1[s[r]] = 1
+            windowSize = r - l + 1
+            maxFreq = max(dict1.values())
+            if windowSize - maxFreq > k:
+                dict1[s[l]] -= 1
                 l += 1
-                length = (r - l) + 1
-            best = max(best, length)
-        return best
-
+            else:
+                res = max(res, windowSize)
+        return res
