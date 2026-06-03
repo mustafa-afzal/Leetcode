@@ -5,4 +5,5 @@ class Solution:
             comp = target - v
             if comp in map:
                 return [i, map[comp]]
-            map[v] = i
+            else:
+                map[v] = i
