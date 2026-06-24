@@ -1,19 +1,16 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        l = 0
         map = {}
-        res = 0
+        maxWindow = 0
+        l = 0
         for r in range(len(s)):
-            if s[r] in map:
-                map[s[r]] += 1
-            else:
-                map[s[r]] = 1
-            maxFreq = max(map.values())
+            map[s[r]] = map.get(s[r], 0) + 1
             windowSize = r - l + 1
+            maxFreq = max(map.values())
             if windowSize - maxFreq > k:
                 map[s[l]] -= 1
+                if map[s[l]] == 0:
+                    del map[s[l]]
                 l += 1
-            else:
-                res = max(res, windowSize)
-        return res
-            
+            maxWindow = max(r - l + 1, maxWindow)
+        return maxWindow
