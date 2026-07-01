@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/mustafa-afzal/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/mustafa-afzal/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/mustafa-afzal/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0704-binary-search](https://github.com/mustafa-afzal/Leetcode/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/mustafa-afzal/Leetcode/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/mustafa-afzal/Leetcode/tree/master/0853-car-fleet) |
 ## Hash Table
@@ -103,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mustafa-afzal/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0704-binary-search](https://github.com/mustafa-afzal/Leetcode/tree/master/0704-binary-search) |
 ## Dynamic Programming
 |  |
 | ------- |
