@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/mustafa-afzal/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/mustafa-afzal/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/mustafa-afzal/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0380-insert-delete-getrandom-o1](https://github.com/mustafa-afzal/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0704-binary-search](https://github.com/mustafa-afzal/Leetcode/tree/master/0704-binary-search) |
 | [0739-daily-temperatures](https://github.com/mustafa-afzal/Leetcode/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/mustafa-afzal/Leetcode/tree/master/0853-car-fleet) |
@@ -42,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/mustafa-afzal/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/mustafa-afzal/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/mustafa-afzal/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0380-insert-delete-getrandom-o1](https://github.com/mustafa-afzal/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0424-longest-repeating-character-replacement](https://github.com/mustafa-afzal/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/mustafa-afzal/Leetcode/tree/master/0567-permutation-in-string) |
 ## Sorting
@@ -170,8 +172,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/mustafa-afzal/Leetcode/tree/master/0155-min-stack) |
+| [0380-insert-delete-getrandom-o1](https://github.com/mustafa-afzal/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 ## Math
 |  |
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/mustafa-afzal/Leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0380-insert-delete-getrandom-o1](https://github.com/mustafa-afzal/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+## Randomized
+|  |
+| ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/mustafa-afzal/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 <!---LeetCode Topics End-->
