@@ -7,7 +7,7 @@ class Solution:
                 return m
             elif nums[m] > nums[r]:
                 if target >= nums[l] and target <= nums[m]:
-                   r = m - 1
+                    r = m - 1
                 else:
                     l = m + 1
             else:
