@@ -7,25 +7,26 @@ class TimeMap:
         if self.hmap.get(key):
             self.hmap[key].append((timestamp, value))
         else:
-            self.hmap[key] = []
-            self.hmap[key].append((timestamp, value))
-
+            self.hmap[key] = [(timestamp, value)]
+ 
     def get(self, key: str, timestamp: int) -> str:
         pairs = self.hmap.get(key)
-        bestVal = -1
-        if pairs:
-            length = len(pairs)
-        else:
-            length = 0
-        l, r = 0, length - 1
+        if not pairs:
+            return ""
+        else: 
+            length = len(pairs) - 1
+        l, r = 0, length
+        bestVal = ""
         while l <= r:
             m = (l + r) // 2
             if pairs[m][0] > timestamp:
                 r = m - 1
-            elif pairs[m][0] <= timestamp:
+            else:
                 bestVal = pairs[m][1]
                 l = m + 1
-        return bestVal if bestVal != -1 else ""
+        return bestVal
+
+      
 
 # Your TimeMap object will be instantiated and called as such:
 # obj = TimeMap()
