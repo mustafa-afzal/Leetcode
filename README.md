@@ -191,4 +191,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/mustafa-afzal/Leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/mustafa-afzal/Leetcode/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/mustafa-afzal/Leetcode/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
