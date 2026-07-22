@@ -9,14 +9,14 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        curr1 = head
+        curr = head
         map = {}
-        while curr1:
-            map[curr1] = Node(curr1.val)
-            curr1 = curr1.next
-        curr1 = head
-        while curr1:
-            map[curr1].next = map[curr1.next] if curr1.next else None
-            map[curr1].random = map[curr1.random] if curr1.random else None
-            curr1 = curr1.next
+        while curr:
+            map[curr] = Node(curr.val)
+            curr = curr.next
+        curr = head
+        while curr:
+            map[curr].next = map[curr.next] if curr.next else None
+            map[curr].random = map[curr.random] if curr.random else None
+            curr = curr.next
         return map[head] if head else None
