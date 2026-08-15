@@ -4,6 +4,6 @@ class Solution:
         for i, v in enumerate(nums):
             comp = target - v
             if comp in map:
-                return [i, map[comp]]
+                return [map[comp], i]
             else:
                 map[v] = i
