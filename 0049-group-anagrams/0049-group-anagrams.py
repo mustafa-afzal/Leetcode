@@ -1,11 +1,13 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        sSorted = ""
-        map = {}
+        groups = {}
         for s in strs:
-            sSorted = "".join(sorted(s))
-            if sSorted in map:
-                map[sSorted].append(s)
+            count = [0] * 26
+            for c in s:
+                count[ord(c) - ord('a')] += 1
+            key = tuple(count)
+            if key in groups:
+                groups[key].append(s)
             else:
-                map[sSorted] = [s]
-        return list(map.values())
+                groups[key] = [s]
+        return list(groups.values()) 
