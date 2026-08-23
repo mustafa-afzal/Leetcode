@@ -12,7 +12,7 @@ class Solution:
             return False
         if self.sameTree(s, t):
             return True
-        return self.sameTree(s.left, t) or self.sameTree(s.right, t)
+        return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
     
     def sameTree(self, s, t):
         if not s and not t:
