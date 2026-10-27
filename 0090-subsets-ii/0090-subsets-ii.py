@@ -4,9 +4,7 @@ class Solution:
         nums.sort()
         def backtrack(path, i):
             if i == len(nums):
-                print(path, "Res: ", res)
-                if path not in res:
-                    res.append(path.copy())
+                res.append(path.copy())
                 return
             if i > len(nums):
                 return
@@ -15,7 +13,9 @@ class Solution:
             backtrack(path, i+1)
             path.pop()
 
-            # don't include
+            # don't include, if skip then skip duplicates as well
+            while i + 1 < len(nums) and nums[i] == nums[i + 1]:
+                i += 1
             backtrack(path, i+1)
         backtrack([], 0)
         return res
